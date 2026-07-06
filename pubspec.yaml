@@ -1,0 +1,62 @@
+name: healthflow
+description: A multilingual healthcare management application with perfect Tamil support
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Material Design
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Database
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  
+  # HTTP & API
+  http: ^1.1.0
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  csv: ^5.1.1
+  
+  # Icons
+  cupertino_icons: ^1.0.6
+  sqflite_common_ffi: ^2.3.4+4
+  sqflite_common_ffi_web: ^0.4.5
+  url_launcher: ^6.3.2
+  pdf: ^3.10.4
+  printing: ^5.11.1
+  file_picker: ^6.1.1
+  local_auth: ^2.2.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Enable internationalization
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/data/
+  
+  fonts:
+    - family: Nirmala
+      fonts:
+        - asset: assets/fonts/Nirmala.ttc
